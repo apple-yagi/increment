@@ -3,7 +3,8 @@ const {
   QIITA_API,
   GITHUB_API,
   LANGUAGE_IMAGE_URL
-} = process.env;
+} = process.env,
+  domain = process.env.BASE_URL.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1];
 
 module.exports = {
   /*
@@ -28,7 +29,7 @@ module.exports = {
       rel: "icon",
       type: "image/x-icon",
       href: "/favicon.ico"
-    }]
+    }],
   },
   /*
    ** Customize the progress bar color
@@ -56,7 +57,16 @@ module.exports = {
     }
   },
 
-  modules: ["@nuxtjs/vuetify", "@nuxtjs/axios"],
+  modules: [
+    "@nuxtjs/vuetify",
+    "@nuxtjs/axios",
+    ["@nuxtjs/google-adsense", {
+      id: process.env.GA_ADSENSE_ID,
+      pageLevelAds: true,
+      analyticsUacct: process.env.GA_TRACKING_ID,
+      analyticsDomainName: domain
+    }]
+  ],
 
   plugins: [{
     src: "~/plugins/ga.js",
