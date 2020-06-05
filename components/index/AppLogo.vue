@@ -1,10 +1,10 @@
 <template>
   <div class="VueToIncrementLogo">
-    <div class="VueToCurveLogo" :class="{ 'dark': darkMode, 'light': !darkMode}">
+    <div class="VueToCurveLogo" :class="{ dark: darkMode, light: !darkMode }">
       <i class="curve" />
     </div>
-    <div class="VueToPlusLogo" :class="{ 'dark': darkMode, 'light': !darkMode}">
-      <i class="op_plus" :class="{ 'dark--plus': darkMode, 'light--plus': !darkMode}" />
+    <div class="VueToPlusLogo" :class="{ dark: darkMode, light: !darkMode }">
+      <i class="op_plus" :class="{ 'dark--plus': darkMode, 'light--plus': !darkMode }" />
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .light {
   background-color: #7393ea;
   box-shadow: 0 0 0 5px #fff;
@@ -80,7 +80,6 @@ export default {
 .op_plus:after {
   display: block;
   content: "";
-  /* background-color: #fff; */
   border-radius: 10px;
   position: absolute;
   height: 10px;
@@ -143,4 +142,3 @@ export default {
   }
 }
 </style>
-
