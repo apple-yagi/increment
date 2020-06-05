@@ -1,0 +1,34 @@
+{
+  "name": "increment",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "yagi",
+  "private": true,
+  "scripts": {
+    "dev": "HOST=0.0.0.0 PORT=3000 nuxt",
+    "build": "nuxt build",
+    "start": "HOST=0.0.0.0 PORT=3000 nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "cors": "^2.8.5",
+    "firebase": "^7.14.5",
+    "firebase-tools": "^8.4.1",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.0.0",
+    "vue-chartjs": "^3.5.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
