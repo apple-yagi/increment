@@ -11,18 +11,21 @@
         </div>
       </div>
     </section>
-    <stack-overflow />
+    <hatenabu />
+    <stack-overflow class="mb-5" />
   </div>
 </template>
 
 <script>
 import AppLogo from "~/components/index/AppLogo.vue";
+import Hatenabu from "~/components/index/Hatenabu.vue";
 import StackOverflow from "~/components/index/StackOverflow.vue";
 
 export default {
   components: {
     AppLogo,
-    StackOverflow
+    StackOverflow,
+    Hatenabu
   }
 };
 </script>
