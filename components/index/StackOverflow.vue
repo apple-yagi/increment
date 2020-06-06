@@ -5,7 +5,7 @@
         <v-col cols="12" sm="4">
           <v-sheet class="mx-auto" max-width="330px">
             <a href="https://ja.stackoverflow.com/" target="_blank">
-              <v-img src="/img/stackoverflow.png" />
+              <img width="300" src="stackoverflow.png" />
             </a>
           </v-sheet>
         </v-col>
@@ -34,7 +34,9 @@
               </v-col>
               <v-col cols="12" sm="4">
                 <v-layout class="mt-10" justify-center>
-                  <v-img class="gear-img" max-width="100px" src="/img/gear.png" />
+                  <v-sheet max-width="100px">
+                    <img class="gear-img" width="100" src="gear.png" />
+                  </v-sheet>
                 </v-layout>
               </v-col>
             </v-row>
