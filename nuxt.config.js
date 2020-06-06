@@ -1,5 +1,9 @@
 require("dotenv").config();
-const { QIITA_API, GITHUB_API, LANGUAGE_IMAGE_URL } = process.env,
+const {
+  QIITA_API,
+  GITHUB_API,
+  LANGUAGE_IMAGE_URL
+} = process.env,
   domain = process.env.BASE_URL.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1];
 
 module.exports = {
@@ -7,9 +11,11 @@ module.exports = {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      prefix: 'og: http://ogp.me/ns#'
+    },
     title: "increment",
-    meta: [
-      {
+    meta: [{
         charset: "utf-8"
       },
       {
@@ -21,38 +27,12 @@ module.exports = {
         name: "description",
         content: "Technical information site for beginners"
       },
-      {
-        name: "twitter:card",
-        content: "summary_large_image"
-      },
-      {
-        name: "twitter:site",
-        content: "@yagi"
-      },
-      {
-        name: "og:url",
-        content: "https://increment.site"
-      },
-      {
-        name: "og:description",
-        content: "Technical information site for beginners"
-      },
-      {
-        name: "og:title",
-        content: "increment"
-      },
-      {
-        name: "og:image",
-        content: "https://increment.site/img/twitter_card_image.png"
-      }
     ],
-    link: [
-      {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
-      }
-    ]
+    link: [{
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/favicon.ico"
+    }]
   },
   /*
    ** Customize the progress bar color
@@ -65,7 +45,10 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
-    extend(config, { isDev, isClient }) {
+    extend(config, {
+      isDev,
+      isClient
+    }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: "pre",
@@ -79,18 +62,17 @@ module.exports = {
 
   modules: [
     "@nuxtjs/vuetify",
-    "@nuxtjs/axios",
-    [
-      "@nuxtjs/google-adsense",
-      {
-        id: process.env.GA_ADSENSE_ID,
-        pageLevelAds: true
-      }
-    ]
+    "@nuxtjs/axios"
+    // [
+    //   "@nuxtjs/google-adsense",
+    //   {
+    //     id: process.env.GA_ADSENSE_ID,
+    //     pageLevelAds: true
+    //   }
+    // ]
   ],
 
-  plugins: [
-    {
+  plugins: [{
       src: "~/plugins/ga.js",
       mode: "client"
     },

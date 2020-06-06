@@ -25,6 +25,40 @@ import StackOverflow from "~/components/index/StackOverflow.vue";
 import TechCrunch from "~/components/index/TechCrunch.vue";
 
 export default {
+  head() {
+    return {
+      meta: [
+        {
+          name: "og:url",
+          content: "https://sampleapp-e29e2.web.app/"
+        },
+        {
+          name: "og:title",
+          content: "increment"
+        },
+        {
+          name: "og:description",
+          content: "Technical information site for beginners"
+        },
+        {
+          name: "og:image",
+          content: "img/twitter_card_image.png"
+        },
+        {
+          name: "og:type",
+          content: "website"
+        },
+        {
+          name: "twitter:card",
+          content: "summary"
+        },
+        {
+          name: "twitter:site",
+          content: "@2nSTmOTLY2ltbvS"
+        }
+      ]
+    };
+  },
   components: {
     AppLogo,
     StackOverflow,
