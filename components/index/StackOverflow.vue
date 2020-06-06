@@ -2,23 +2,21 @@
   <v-container>
     <v-card outlined>
       <v-row align="center">
-        <v-col class="mx-auto" cols="12" sm="4">
-          <a href="https://ja.stackoverflow.com/" target="_blank">
-            <v-img
-              src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5333-stackoverflow_102532.png"
-            />
-          </a>
+        <v-col cols="12" sm="4">
+          <v-sheet class="mx-auto" max-width="330px">
+            <a href="https://ja.stackoverflow.com/" target="_blank">
+              <v-img src="/img/stackoverflow.png" />
+            </a>
+          </v-sheet>
         </v-col>
         <v-col class="mx-auto" cols="12" sm="8">
           <v-card-title>Stack Overflow</v-card-title>
-          <v-card-text
-            >Stack Overflow（スタックオーバーフロー）はStack Exchange
-            Networkの一つでコンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティである。</v-card-text
-          >
+          <v-card-text>
+            Stack Overflow（スタックオーバーフロー）はStack Exchange
+            Networkの一つでコンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティである。
+          </v-card-text>
           <h4 class="title">
-            <a href="https://insights.stackoverflow.com/survey/2020"
-              >2020 Developer Survey</a
-            >
+            <a href="https://insights.stackoverflow.com/survey/2020">2020 Developer Survey</a>
           </h4>
           <v-card-actions>
             <v-row>
@@ -36,7 +34,7 @@
               </v-col>
               <v-col cols="12" sm="4">
                 <v-layout class="mt-10" justify-center>
-                  <v-img class="gear-img" max-width="100px" src="/gear.png" />
+                  <v-img class="gear-img" max-width="100px" src="/img/gear.png" />
                 </v-layout>
               </v-col>
             </v-row>
