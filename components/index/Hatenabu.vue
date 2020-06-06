@@ -5,9 +5,7 @@
         <v-col cols="12" sm="4">
           <v-sheet class="mx-auto" max-width="200px">
             <a href="https://b.hatena.ne.jp/hotentry/it" target="_blank">
-              <v-img
-                src="https://hatenacorp.jp/images/company/resource/hatena-bookmark-logo-s.png"
-              />
+              <v-img src="img/hatenabookmark-logomark.svg" />
             </a>
           </v-sheet>
         </v-col>
