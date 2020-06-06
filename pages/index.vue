@@ -12,7 +12,9 @@
       </div>
     </section>
     <hatenabu />
-    <stack-overflow class="mb-5" />
+    <stack-overflow />
+    <tech-crunch class="mb-5" />
+    <!-- <adsbygoogle ad-slot="8455833349" /> -->
   </div>
 </template>
 
@@ -20,12 +22,14 @@
 import AppLogo from "~/components/index/AppLogo.vue";
 import Hatenabu from "~/components/index/Hatenabu.vue";
 import StackOverflow from "~/components/index/StackOverflow.vue";
+import TechCrunch from "~/components/index/TechCrunch.vue";
 
 export default {
   components: {
     AppLogo,
     StackOverflow,
-    Hatenabu
+    Hatenabu,
+    TechCrunch
   }
 };
 </script>
