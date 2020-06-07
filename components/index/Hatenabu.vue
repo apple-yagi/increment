@@ -30,8 +30,8 @@
                   <v-icon>mdi-arrow-right-bold</v-icon>
                 </v-btn>
               </v-col>
-              <v-col v-observe-visibility="visibilityChanged" cols="12" sm="4">
-                <v-layout class="mt-2" justify-center>
+              <v-col v-observe-visibility="visibilityChanged" cols="12" sm="6">
+                <v-layout justify-center>
                   <div class="article" :class="{dark: darkMode, light: !darkMode}">
                     <div
                       class="box--landscape mt-3 mx-auto"
@@ -85,7 +85,7 @@ export default {
         link: "https://b.hatena.ne.jp/hotentry/all"
       },
       {
-        title: "アニメとゲームの人気エントリー",
+        title: "ゲームの人気エントリー",
         link: "https://b.hatena.ne.jp/hotentry/game"
       }
     ],
