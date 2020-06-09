@@ -8,9 +8,19 @@
     <v-row justify="center">
       <v-col cols="10" sm="8" lg="6">
         <v-layout justify-space-between>
-          <v-text-field v-model="searchWord" @keydown.enter="search" outlined required></v-text-field>
+          <v-text-field
+            v-model="searchWord"
+            @keydown.enter="search"
+            outlined
+            required
+          ></v-text-field>
 
-          <v-btn :height="54" :loading="loading" @click="search">
+          <v-btn
+            :height="54"
+            :loading="loading"
+            :disabled="loading"
+            @click="search"
+          >
             <v-icon>mdi-magnify</v-icon>
             <span class="shrink ml-2 hidden-sm-and-down">検索</span>
           </v-btn>
