@@ -14,7 +14,6 @@
     <hatenabu />
     <stack-overflow />
     <tech-crunch class="mb-5" />
-    <!-- <adsbygoogle ad-slot="8455833349" /> -->
   </div>
 </template>
 

@@ -12,7 +12,7 @@ module.exports = {
    */
   head: {
     htmlAttrs: {
-      prefix: 'og: http://ogp.me/ns#'
+      prefix: "og: http://ogp.me/ns#"
     },
     title: "increment",
     meta: [{
@@ -26,7 +26,7 @@ module.exports = {
         hid: "description",
         name: "description",
         content: "Technical information site for beginners"
-      },
+      }
     ],
     link: [{
       rel: "icon",
@@ -62,14 +62,7 @@ module.exports = {
 
   modules: [
     "@nuxtjs/vuetify",
-    "@nuxtjs/axios"
-    // [
-    //   "@nuxtjs/google-adsense",
-    //   {
-    //     id: process.env.GA_ADSENSE_ID,
-    //     pageLevelAds: true
-    //   }
-    // ]
+    "@nuxtjs/axios",
   ],
 
   plugins: [{
