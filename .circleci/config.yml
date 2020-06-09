@@ -34,6 +34,10 @@ jobs:
     executor: default
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
+            - v1-dependencies-
       - run:
           name: test
           command: npm run test
@@ -42,6 +46,10 @@ jobs:
     executor: default
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
+            - v1-dependencies-
       - run:
           name: generate
           command: npm run generate
