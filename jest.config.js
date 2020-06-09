@@ -1,4 +1,7 @@
 module.exports = {
+  setupFiles: [
+    "<rootDir>/spec/setup.js"
+  ],
   transform: {
     "^.+\\.js$": "babel-jest",
     ".*\\.(vue)$": "vue-jest"
