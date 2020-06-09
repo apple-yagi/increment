@@ -61,7 +61,7 @@ workflows:
   process:
     jobs:
       - build:
-          context: increment-firebase-settings
+          context: increament-firebase-settings
           filters:
             branches:
               only: /.*/
@@ -78,7 +78,7 @@ workflows:
       - generate-and-deploy:
           requires:
             - test
-          context: increment-firebase-settings
+          context: increament-firebase-settings
           filters:
             branches:
               only: /.*/
