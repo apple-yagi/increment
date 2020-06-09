@@ -34,7 +34,6 @@ jobs:
 
 workflows:
   process:
-    Firebase:
     jobs:
       - test:
           filters:
@@ -45,6 +44,7 @@ workflows:
       - generate-and-deploy:
           requires:
             - test
+          context: Firebase
           filters:
             branches:
               only: /.*/
