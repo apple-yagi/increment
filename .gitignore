@@ -13,11 +13,5 @@ dist
 # environment
 .env
 
-# firebase
-plugins/firebase.js
-plugins/ga.js
-.firebase
-firestore.rules
-
 # vscode
 .DS_Store
