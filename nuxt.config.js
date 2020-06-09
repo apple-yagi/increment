@@ -3,8 +3,7 @@ const {
   QIITA_API,
   GITHUB_API,
   LANGUAGE_IMAGE_URL
-} = process.env,
-  domain = process.env.BASE_URL.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1];
+} = process.env;
 
 module.exports = {
   /*
