@@ -1,28 +1,51 @@
-version: 2
-jobs:
-  deploy_dev: # ジョブ名
+version: 2.1
+
+executors:
+  default:
+    working_directory: ~/workspace
     docker:
-      - image: circleci/node:10.7 # ジョブ実行環境のDockerイメージを記述
+      - image: circleci/node:10.16.3
+
+jobs:
+  test:
+    executor: default
     steps:
-      - checkout # ソースコードのチェックアウト
-      - run: # 順に実行したいコマンドとコマンドに名前をつけます
+      - checkout
+      - run:
+          name: npm install
+          command: npm install
+      - run:
+          name: test
+          command: npm run test
+
+  build-and-deploy:
+    executor: default
+    steps:
+      - checkout
+      - run:
           name: npm install
           command: npm i
       - run:
           name: build
           command: npm run build
       - run:
-          name: test
-          command: npm run test
-      - run:
           name: deploy to Firebase Hosting
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN # プロジェクト上のfirebase-toolsでデプロイします
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
 
 workflows:
-  version: 2
-  deploy_dev: # ワークフローの名前
+  process:
     jobs:
-      - deploy_dev: # 上で定義したジョブを指定します
+      - test:
           filters:
             branches:
-              only: develop # developブランチのみを実行対象とします
+              only: /.*/
+            tags:
+              only: /^v[0-9]+(\.[0-9]+){2}$/
+      - build-and-deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: /.*/
+            tags:
+              only: /^v[0-9]+(\.[0-9]+){2}$/
