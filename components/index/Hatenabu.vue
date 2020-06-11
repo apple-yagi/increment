@@ -9,7 +9,7 @@
     </v-col>
     <v-col class="mx-auto" cols="12" sm="8">
       <v-card-title class="font-weight-bold">はてなブックマーク テクノロジー</v-card-title>
-      <v-card-text style="width: 80%;">
+      <v-card-text align="center" style="width: 80%;">
         はてなブックマークは、オンラインにブックマークを保存・公開することで新しい体験ができる、ソーシャルブックマークです。
         はてなブックマークを利用すると、インターネットの情報をより深く理解でき、良質なページをより少ない時間で見つけられます。
       </v-card-text>

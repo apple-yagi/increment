@@ -7,7 +7,7 @@
     </v-col>
     <v-col class="mx-auto" cols="12" sm="8">
       <v-card-title>Stack Overflow</v-card-title>
-      <v-card-text style="width: 80%;">
+      <v-card-text align="center" style="width: 80%;">
         Stack Overflow（スタックオーバーフロー）はStack Exchange
         Networkの一つでコンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティである。
       </v-card-text>
