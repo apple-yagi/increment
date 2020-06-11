@@ -1,50 +1,44 @@
 <template>
-  <v-container>
-    <v-card outlined>
-      <v-row align="center">
-        <v-col cols="12" sm="4">
-          <v-sheet class="mx-auto" max-width="330px">
-            <a href="https://ja.stackoverflow.com/" target="_blank">
-              <img width="300" src="img/stackoverflow.png" />
-            </a>
-          </v-sheet>
-        </v-col>
-        <v-col class="mx-auto" cols="12" sm="8">
-          <v-card-title>Stack Overflow</v-card-title>
-          <v-card-text>
-            Stack Overflow（スタックオーバーフロー）はStack Exchange
-            Networkの一つでコンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティである。
-          </v-card-text>
-          <h4 class="title">
-            <a href="https://insights.stackoverflow.com/survey/2020">2020 Developer Survey</a>
-          </h4>
-          <v-card-actions>
-            <v-row>
-              <v-col cols="12" sm="8">
-                <v-btn
-                  v-for="(item, i) in stackoverflow_items"
-                  :key="i"
-                  :href="item.link"
-                  target="_blank"
-                  text
-                >
-                  <span class="body-2">{{ item.title }}</span>
-                  <v-icon>mdi-arrow-right-bold</v-icon>
-                </v-btn>
-              </v-col>
-              <v-col cols="12" sm="4">
-                <v-layout class="mt-10" justify-center>
-                  <v-sheet max-width="100px">
-                    <img class="gear-img" width="100" src="img/gear.png" />
-                  </v-sheet>
-                </v-layout>
-              </v-col>
-            </v-row>
-          </v-card-actions>
-        </v-col>
-      </v-row>
-    </v-card>
-  </v-container>
+  <v-row align="center">
+    <v-col align="center" cols="12" sm="4">
+      <a href="https://ja.stackoverflow.com/" target="_blank">
+        <img width="300" src="img/stackoverflow.png" />
+      </a>
+    </v-col>
+    <v-col class="mx-auto" cols="12" sm="8">
+      <v-card-title>Stack Overflow</v-card-title>
+      <v-card-text>
+        Stack Overflow（スタックオーバーフロー）はStack Exchange
+        Networkの一つでコンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティである。
+      </v-card-text>
+      <h4 align="center" class="title">
+        <a href="https://insights.stackoverflow.com/survey/2020">2020 Developer Survey</a>
+      </h4>
+      <v-card-actions>
+        <v-row>
+          <v-col cols="12" sm="8" align="center">
+            <v-btn
+              v-for="(item, i) in stackoverflow_items"
+              :key="i"
+              :href="item.link"
+              target="_blank"
+              text
+            >
+              <span class="body-2">{{ item.title }}</span>
+              <v-icon>mdi-arrow-right-bold</v-icon>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" sm="4">
+            <v-layout class="mt-8" justify-center>
+              <div max-width="100px">
+                <img class="gear-img" width="100" src="img/gear.png" />
+              </div>
+            </v-layout>
+          </v-col>
+        </v-row>
+      </v-card-actions>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

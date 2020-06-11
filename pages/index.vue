@@ -11,9 +11,12 @@
         </div>
       </div>
     </section>
-    <hatenabu />
-    <stack-overflow />
-    <tech-crunch class="mb-5" />
+    <v-divider />
+    <hatenabu class="mt-5" />
+    <v-divider />
+    <stack-overflow class="mt-5" />
+    <v-divider />
+    <tech-crunch class="my-5" />
   </div>
 </template>
 
@@ -69,7 +72,7 @@ export default {
 
 <style scoped>
 .container {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
