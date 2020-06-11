@@ -33,6 +33,10 @@ module.exports = {
         hid: "description",
         name: "description",
         content: "Technical information site for beginners"
+      },
+      {
+        name: "keywords",
+        content: "Tech information, 情報技術サイト, increment, 初学者, beginner, developer, 開発者, Technical infomation site for beginners"
       }
     ],
     link: [{
