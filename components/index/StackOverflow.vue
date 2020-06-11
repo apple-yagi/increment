@@ -7,16 +7,16 @@
     </v-col>
     <v-col class="mx-auto" cols="12" sm="8">
       <v-card-title>Stack Overflow</v-card-title>
-      <v-card-text>
+      <v-card-text style="width: 80%;">
         Stack Overflow（スタックオーバーフロー）はStack Exchange
         Networkの一つでコンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティである。
       </v-card-text>
-      <h4 align="center" class="title">
-        <a href="https://insights.stackoverflow.com/survey/2020">2020 Developer Survey</a>
-      </h4>
       <v-card-actions>
         <v-row>
           <v-col cols="12" sm="8" align="center">
+            <h4 align="center" class="title mb-2">
+              <a href="https://insights.stackoverflow.com/survey/2020">2020 Developer Survey</a>
+            </h4>
             <v-btn
               v-for="(item, i) in stackoverflow_items"
               :key="i"

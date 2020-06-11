@@ -11,7 +11,9 @@
     </v-col>
     <v-col class="mx-auto" cols="12" sm="8">
       <v-card-title class="font-weight-bold">TechCrunch Japan</v-card-title>
-      <v-card-text>TechCrunch（テッククランチ）は、アメリカのブログサイト（ニュースサイト）であり、主にIT系のスタートアップ（ベンチャー）やWebに関するニュースを配信している</v-card-text>
+      <v-card-text
+        style="width: 80%;"
+      >TechCrunch（テッククランチ）は、アメリカのブログサイト（ニュースサイト）であり、主にIT系のスタートアップ（ベンチャー）やWebに関するニュースを配信している</v-card-text>
       <v-card-actions>
         <v-row class="mx-auto">
           <v-col align="center" cols="12" sm="6">
