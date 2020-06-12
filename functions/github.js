@@ -26,7 +26,7 @@ const functions = require('firebase-functions'),
 
 const firestore = admin.firestore();
 
-exports.getLanguageRankList = functions.https.onRequest(async (req, res) => {
+exports.fetchLanguageRankList = functions.https.onRequest(async (req, res) => {
   const githubRef = firestore.collection("github");
   const axiosArray = [];
   languageList.forEach((language) => {

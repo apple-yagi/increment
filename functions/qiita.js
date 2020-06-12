@@ -10,7 +10,7 @@ const functions = require("firebase-functions"),
 admin.initializeApp();
 const firestore = admin.firestore();
 
-exports.getTagRankList = functions.https.onRequest(async (req, res) => {
+exports.fetchTagRankList = functions.https.onRequest(async (req, res) => {
   try {
     const tagList = await axios.get(qiita_url + "tags", {
       params: {
@@ -28,7 +28,7 @@ exports.getTagRankList = functions.https.onRequest(async (req, res) => {
   }
 });
 
-exports.getNewArticles = functions.https.onRequest(async (req, res) => {
+exports.fetchNewArticles = functions.https.onRequest(async (req, res) => {
   try {
     const newArticles = await axios.get(qiita_url + "items", {
       params: {
@@ -47,7 +47,7 @@ exports.getNewArticles = functions.https.onRequest(async (req, res) => {
   }
 });
 
-exports.getTrendArticles = functions.https.onRequest(async (req, res) => {
+exports.fetchTrendArticles = functions.https.onRequest(async (req, res) => {
   const qiitaRef = firestore.collection("qiita").doc("trend-articles");
   qiitaRef
     .get()

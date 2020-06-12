@@ -1,22 +1,22 @@
 import axios from "axios";
 import firebase from "~/plugins/firebase";
-const qiita_api = process.env.QIITA_API;
+const qiita_api = process.env.FIREBASE_API;
 
 export default {
   async getTagRankList() {
-    const tagList = await axios.get(qiita_api + "getTagRankList");
+    const tagList = await axios.get(qiita_api + "fetchTagRankList");
 
     return Promise.resolve(tagList.data);
   },
 
   async getNewArticles() {
-    const articles = await axios.get(qiita_api + "getNewArticles");
+    const articles = await axios.get(qiita_api + "fetchNewArticles");
 
     return Promise.resolve(articles.data);
   },
 
   async getTrendArticles() {
-    const articles = await axios.get(qiita_api + "getTrendArticles");
+    const articles = await axios.get(qiita_api + "fetchTrendArticles");
 
     return Promise.resolve(articles.data.articles)
   },

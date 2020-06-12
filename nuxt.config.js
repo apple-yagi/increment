@@ -1,7 +1,6 @@
 require("dotenv").config();
 const {
-  QIITA_API,
-  GITHUB_API,
+  FIREBASE_API,
   LANGUAGE_IMAGE_URL,
   FIREBASE_API_KEY,
   FIREBASE_AUTH_DOMAIN,
@@ -84,8 +83,7 @@ module.exports = {
   ],
 
   env: {
-    QIITA_API,
-    GITHUB_API,
+    FIREBASE_API,
     LANGUAGE_IMAGE_URL,
     FIREBASE_API_KEY,
     FIREBASE_AUTH_DOMAIN,

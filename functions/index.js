@@ -1,22 +1,22 @@
 const {
-  getTagRankList,
-  getNewArticles,
-  getTrendArticles,
+  fetchTagRankList,
+  fetchNewArticles,
+  fetchTrendArticles,
   trendArticlesAggregator,
   searchTagCount
 } = require('./qiita'), {
   repoAggregate,
-  getLanguageRankList,
+  fetchLanguageRankList,
   searchRepositoryCount,
   searchRepoRanking
 } = require('./github.js');
 
-exports.getTagRankList = getTagRankList
-exports.getNewArticles = getNewArticles
-exports.getTrendArticles = getTrendArticles
+exports.fetchTagRankList = fetchTagRankList
+exports.fetchNewArticles = fetchNewArticles
+exports.fetchTrendArticles = fetchTrendArticles
 exports.repoAggregate = repoAggregate
 exports.trendArticlesAggregate = trendArticlesAggregator
-exports.getLanguageRankList = getLanguageRankList
+exports.fetchLanguageRankList = fetchLanguageRankList
 exports.searchRepositoryCount = searchRepositoryCount
 exports.searchTagCount = searchTagCount
 exports.searchRepoRanking = searchRepoRanking

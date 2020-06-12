@@ -1,10 +1,10 @@
 import axios from 'axios';
-const github_api = process.env.GITHUB_API;
+const github_api = process.env.FIREBASE_API;
 
 export default {
   async getLanguageRankList() {
     try {
-      const languageRankList = await axios.get(github_api + "getLanguageRankList");
+      const languageRankList = await axios.get(github_api + "fetchLanguageRankList");
       return Promise.resolve(languageRankList.data);
     } catch (err) {
       console.log(err);
