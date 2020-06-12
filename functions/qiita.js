@@ -1,13 +1,12 @@
 const functions = require("firebase-functions"),
+  admin = require('./admin-setting.js'),
   axios = require("axios"),
   cors = require("cors")({
     origin: true
   }),
-  admin = require("firebase-admin"),
   qiita_url = "https://qiita.com/api/v2/",
   qiita_trend_api = "https://qiita-api.netlify.app/.netlify/functions/trend";
 
-admin.initializeApp();
 const firestore = admin.firestore();
 
 exports.fetchTagRankList = functions.https.onRequest(async (req, res) => {
