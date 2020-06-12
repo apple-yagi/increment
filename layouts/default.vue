@@ -78,10 +78,12 @@ export default {
       window.addEventListener("resize", this.handleResize);
     }
 
+    // Qiita APIからデータをロード
     if (!this.qiita_loading && !this.trendArticles[0]) {
       this.$store.dispatch("qiita/loadArticles");
     }
 
+    // GitHub APIからデータをロード
     if (!this.github_loading && !this.languageList[0]) {
       this.$store.commit("github/setLoading", true);
       await this.$store.dispatch("github/loadLanguageList");
