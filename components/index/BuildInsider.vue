@@ -1,10 +1,12 @@
 <template>
   <v-row align="center">
     <v-col align="center" cols="12" sm="4">
-      <a href="https://www.buildinsider.net/" target="_blank">
-        <img v-if="darkMode" width="300" src="img/buildInsider-logo-white.png" />
-        <img v-else width="300" src="img/buildInsider-logo-black.png" />
-      </a>
+      <v-sheet class="mx-auto" max-width="300">
+        <a href="https://www.buildinsider.net/" target="_blank">
+          <img v-if="darkMode" width="300" src="img/buildInsider-logo-white.png" />
+          <img v-else width="300" src="img/buildInsider-logo-black.png" />
+        </a>
+      </v-sheet>
     </v-col>
     <v-col cols="12" sm="8">
       <v-card-title>Build Insider</v-card-title>
