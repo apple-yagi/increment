@@ -1,5 +1,5 @@
 const functions = require("firebase-functions"),
-  admin = require('./admin-setting.js'),
+  admin = require('./admin-setting.js').admin,
   axios = require("axios"),
   cors = require("cors")({
     origin: true

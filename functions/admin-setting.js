@@ -1,7 +1,4 @@
 const admin = require('firebase-admin');
 admin.initializeApp();
 
-export {
-  admin as
-  default
-}
+exports.admin = admin;
