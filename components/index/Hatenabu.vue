@@ -161,10 +161,4 @@ export default {
     width: 125px;
   }
 }
-
-@media screen and (min-width: 769px) {
-  .text-responsive {
-    width: 80%;
-  }
-}
 </style>

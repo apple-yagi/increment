@@ -154,4 +154,10 @@ html {
   bottom: 50px;
   right: 50px;
 }
+
+@media screen and (min-width: 769px) {
+  .text-responsive {
+    width: 80%;
+  }
+}
 </style>

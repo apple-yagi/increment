@@ -101,10 +101,4 @@ a {
     transform: rotate(360deg);
   }
 }
-
-@media screen and (min-width: 769px) {
-  .text-responsive {
-    width: 80%;
-  }
-}
 </style>

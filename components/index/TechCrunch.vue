@@ -80,11 +80,3 @@ export default {
   })
 };
 </script>
-
-<style scoped>
-@media screen and (min-width: 769px) {
-  .text-responsive {
-    width: 80%;
-  }
-}
-</style>
