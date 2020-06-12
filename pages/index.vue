@@ -12,11 +12,13 @@
       </div>
     </section>
     <v-divider />
-    <hatenabu class="mt-5" />
+    <hatenabu class="mt-5" :dark-mode="darkMode" />
     <v-divider />
     <stack-overflow class="mt-5" />
     <v-divider />
-    <tech-crunch class="my-5" />
+    <tech-crunch class="mt-5" />
+    <v-divider />
+    <build-insider class="my-5" :dark-mode="darkMode" />
   </div>
 </template>
 
@@ -25,6 +27,7 @@ import AppLogo from "~/components/index/AppLogo.vue";
 import Hatenabu from "~/components/index/Hatenabu.vue";
 import StackOverflow from "~/components/index/StackOverflow.vue";
 import TechCrunch from "~/components/index/TechCrunch.vue";
+import BuildInsider from "~/components/index/BuildInsider.vue";
 
 export default {
   head() {
@@ -61,11 +64,19 @@ export default {
       ]
     };
   },
+
   components: {
     AppLogo,
     StackOverflow,
     Hatenabu,
-    TechCrunch
+    TechCrunch,
+    BuildInsider
+  },
+
+  computed: {
+    darkMode() {
+      return this.$vuetify.theme.dark;
+    }
   }
 };
 </script>
