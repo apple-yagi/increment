@@ -47,7 +47,7 @@ export default {
         },
         {
           name: "og:image",
-          content: "img/twitter_card_image.png"
+          content: "@/assets/twitter_card_image.png"
         },
         {
           name: "og:type",
