@@ -18,7 +18,8 @@ module.exports = {
    */
   head: {
     htmlAttrs: {
-      prefix: "og: http://ogp.me/ns#"
+      prefix: "og: http://ogp.me/ns#",
+      lang: "ja"
     },
     title: "increment",
     meta: [{
