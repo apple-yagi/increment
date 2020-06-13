@@ -3,7 +3,7 @@
     <v-col cols="12" sm="4">
       <v-sheet class="mx-auto" max-width="200px">
         <a href="https://b.hatena.ne.jp/hotentry/it" target="_blank">
-          <v-img src="img/hatenabookmark-logomark.svg" />
+          <v-img src="img/hatenabookmark-logomark.svg" alt="hatenabu logo" />
         </a>
       </v-sheet>
     </v-col>

@@ -2,7 +2,7 @@
   <v-row align="center">
     <v-col align="center" cols="12" sm="4">
       <a href="https://ja.stackoverflow.com/" target="_blank">
-        <img width="300" src="img/stackoverflow.png" />
+        <img width="300" src="img/stackoverflow.png" alt="Stack Overflow logo" />
       </a>
     </v-col>
     <v-col class="mx-auto" cols="12" sm="8">
@@ -31,7 +31,7 @@
           <v-col cols="12" sm="4">
             <v-layout class="mt-8" justify-center>
               <div max-width="100px">
-                <img class="gear-img" width="100" src="img/gear.png" />
+                <img class="gear-img" width="100" src="img/gear.png" alt="Gear logo" />
               </div>
             </v-layout>
           </v-col>
