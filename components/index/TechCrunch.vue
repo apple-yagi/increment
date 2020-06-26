@@ -5,6 +5,7 @@
         <a href="https://jp.techcrunch.com/" target="_blank">
           <v-img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/TechCrunch_logo.svg/440px-TechCrunch_logo.svg.png"
+            alt="TechCrunch logo"
           />
         </a>
       </v-sheet>

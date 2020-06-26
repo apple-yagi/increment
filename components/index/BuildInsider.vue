@@ -3,8 +3,13 @@
     <v-col cols="12" sm="4">
       <v-sheet class="mx-auto" max-width="300px">
         <a href="https://www.buildinsider.net/" target="_blank">
-          <img v-if="darkMode" width="300px" src="img/buildinsider-logo-white.png" />
-          <img v-else width="300px" src="img/buildinsider-logo-black.png" />
+          <img
+            v-if="darkMode"
+            width="300px"
+            src="img/buildinsider-logo-white.png"
+            alt="Build Insider Logo"
+          />
+          <img v-else width="300px" src="img/buildinsider-logo-black.png" alt="Build Insider Logo" />
         </a>
       </v-sheet>
     </v-col>
@@ -31,8 +36,8 @@
           <v-col cols="12" sm="4">
             <v-layout class="mt-5" justify-center>
               <div max-width="100px">
-                <img v-if="darkMode" width="100" src="img/server-white.png" />
-                <img v-else width="100" src="img/server-black.png" />
+                <img v-if="darkMode" width="100" src="img/server-white.png" alt="server logo" />
+                <img v-else width="100" src="img/server-black.png" alt="server logo" />
               </div>
             </v-layout>
           </v-col>
